@@ -1,0 +1,11 @@
+<section>
+	Name: {{user.name}} <br> 
+	<div data-ng-show="!!user.address">
+		Sreet: {{user.address.street}} <br> 
+		City: {{user.address.city}} <br> 
+		Planet: {{user.address.planet}} <br>
+	</div>
+	<div>Friends:
+		<div data-ng-repeat="friend in user.friends">{{friend}}</div>
+	</div>
+</section>
