@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var serveIndex = require('serve-index')
 
 createStaticIndex('/101-basic');
+createStaticIndex('/202-basic');
 app.use(express.static(__dirname + '/app'));
 
 var port = process.env.PORT || 3000;
