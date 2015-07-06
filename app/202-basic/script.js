@@ -40,10 +40,11 @@ angular.module('app').directive('userInfoCard', function() {
     restrict: 'A',
     templateUrl: 'userInfoCard.html',
     scope: {
-      user: '=' 
+      user: '=',
+      collapsed: '@' //will be string value
     },
     controller: function($scope) {
-      $scope.collapsed = false; 
+      //$scope.collapsed = false; 
       $scope.knightMe = function(user) {
         user.rank = 'Knight';
       };
