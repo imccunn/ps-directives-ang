@@ -58,6 +58,7 @@ angular.module('app').directive('userInfoCard', function() {
 angular.module('app').directive('address', function() {
   return {
     restrict: 'A',
+    scope: true,
     templateUrl: 'address.html',
     controller: function($scope) {
       $scope.collapsed = false;
