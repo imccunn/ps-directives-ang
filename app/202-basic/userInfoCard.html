@@ -1,12 +1,7 @@
 <section class="panel panel-primary">
   <div class="panel-heading" data-ng-click="collapse()">{{user.name}}</div>
   <div class="panel-body" data-ng-hide="collapsed">
-    <div data-ng-show="!!user.address">
-      <h4>Address</h4>
-      Sreet: {{user.address.street}} <br> 
-      City: {{user.address.city}} <br> 
-      Planet: {{user.address.planet}} <br>
-    </div>
+    <div address></div>
     <div>
       <h4>Friends:</h4>
       <ul>

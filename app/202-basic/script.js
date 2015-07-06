@@ -54,3 +54,19 @@ angular.module('app').directive('userInfoCard', function() {
     }
   };
 });
+
+angular.module('app').directive('address', function() {
+  return {
+    restrict: 'A',
+    templateUrl: 'address.html',
+    controller: function($scope) {
+      $scope.collapsed = false;
+      $scope.collapseAddress = function() {
+        $scope.collapsed = true;
+      };
+      $scope.expandAddress = function() {
+        $scope.collapsed = false;
+      };
+    }
+  }
+});
